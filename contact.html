@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact form to leave your thoughts and experiences. ">
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="javascript">
+    <title>Contact</title>
+</head>
+<a class="skip-to-main-content" href="#content">Skip to main content</a>
+
+<body>
+    <header>
+        <div class="header-top">
+            <!-- Navigation Menu -->
+            <nav aria-label="Main Navigation" class="navbar">
+
+                <ul id="navbar-menu" role="list" aria-label="navigation-menu">
+                    <li class="homebutton"> <a href="index.html" role="button">Home</a></li>
+                    <li> <a href="about.html" role="button">About</a></li>
+                    <li> <a href="animals.html" role="button">Animals</a></li>
+                    <li> <a href="beaches.html" role="button">Beaches</a></li>
+                    <li> <a href="hiking.html" role="button"> Hiking</a></li>
+                    <li> <a href="cities.html" role="button"> Cities</a></li>
+                    <li> <a href="sealife.html" role="button"> Sea life</a></li>
+                    <li> <a href="contact.html" role="button"> Contact</a></li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <img src="img/travel.jpg" alt="Woman meditaing in the desert during the sunset.">
+            <h1 tabindex="0">Discover Australia </h1>
+
+        </div>
+    </header>
+    <main id="content">
+        <p tabindex="0">I would love to hear about your thoughts and experiences on Australia.
+        </p>
+
+
+        <div class="pop-container">
+            <button tabindex="0" type="submit" class="btn" onclick="openPopup()">Share your experience!</button>
+
+
+            <div class="popup" id="popup">
+
+                <div  class="container-contact">
+                    <h2 tabindex="0">Share your thoughts or experiences</h2>
+                    <form action="contact-thankyou.html" method="get" name="myForm">
+
+                        <div class="container">
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="fname">First Name</label>
+                                    </div>
+                                    <div class="col-75" area-required="true">
+                                        <input tabindex="0" type="text" id="fname" name="firstname"
+                                            placeholder="Your name.." required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="lname">Last Name</label>
+                                    </div>
+                                    <div class="col-75" area-required="true">
+                                        <input tabindex="0" type="text" id="lname" name="lastname"
+                                            placeholder="Your last name.." required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="email">E-mail</label>
+                                    </div>
+                                    <div class="col-75" area-required="true">
+                                        <input tabindex="0" type="email" id="email" name="email" required
+                                            placeholder="Enter your email address..">
+
+                                
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                    <div class="col-75" area-required="true">
+                                        <textarea id="subject" name="subject" placeholder="Write something.."
+                                            style="height:200px" required></textarea>
+                                    </div>
+
+                                </div>
+                                <div id="submit-button">
+                                    <button type="submit" onclick="closePopup()">Submit</button>
+                                </div>
+                        </div>
+                        
+                    </form>
+                </div>
+                <!----------------->
+                <!-- JavaScript --->
+                <!----------------->
+                <script>
+                    let popup = document.getElementById("popup");
+
+                    function openPopup() {
+                        popup.classList.add("open-popup");
+                    }
+                    function closePopup() {
+                        popup.classList.re("open-popup");
+                    }
+                </script>
+            </div>
+        </div>
+
+    </main>
+
+    <a href="#navbar-menu" class="topbutton">Back to Top</a>
+
+    <footer class="footer-basic">
+
+        <div class="social">
+            <a aria-label="Go to authors Facebook page"
+                href="https://www.facebook.com/profile.php?id=100009665522838"><img
+                    src="img/vecteezy_facebook-3d-illustration_13212095_231.png" alt="Facebook social link"></a>
+            <a aria-label="View authors Behance page" href="https://www.behance.net/lisagrsrgaar"><img
+                    src="img/vecteezy_behance-3d-illustration_13191635_363.png" alt="Behance social link"></a>
+            <a aria-label="View authors LinkedIn profile"
+                href="https://www.linkedin.com/in/lisa-gr%C3%B8tan-s%C3%B8rgaard-3aab9a1b4/"><img src="img/linkedin.png"
+                    alt="LinkedIn social link"></a>
+            <a aria-label="View authors Instagram profile" href="https://www.instagram.com/lisagrotan/"><img
+                    src="img/vecteezy_instagram-3d-illustration_13212099_937.png" alt="Instagram social link"></a>
+
+            <p tabindex="0">This website has been created for the subject IDG2012 - Web Accessibility, Usability and
+                Ethics at
+                <abbr title="Norwegian University of Science and Technology">NTNU</abbr> by Lisa Grøtan Sørgaard
+            </p>
+            <p tabindex="0" class="copyright"><i>Lisa Grøtan Sørgaard © 2022</i></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
